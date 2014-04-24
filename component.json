@@ -1,0 +1,15 @@
+{
+  "name": "attach",
+  "repo": "bredele/attach",
+  "description": "Attach media or stream to a video element",
+  "version": "0.0.0",
+  "keywords": [],
+  "dependencies": {
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "attach",
+  "version": "0.0.0",
+  "description": "Attach media or stream to a video element",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bredele/attach.git"
+  },
+  "keywords": [
+    "media",
+    "webrtc",
+    "attach"
+  ],
+  "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/attach/issues"
+  },
+  "homepage": "https://github.com/bredele/attach"
+}
