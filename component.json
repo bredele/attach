@@ -6,7 +6,9 @@
   "keywords": [],
   "dependencies": {
   },
-  "development": {},
+  "development": {
+    "bredele/media": "~0.1.4"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [

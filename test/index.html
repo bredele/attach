@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Attach media stream</title>
+</head>
+<body>
+	<video></video>
+	<video class="other"></video>
+	<script src="../build/build.js"></script>
+	<script>
+	  var attach = require('attach');
+	  var media = require('media');
+
+	  // config marche pas
+	  attach(media, 'video', {
+	  	audio: false
+	  });
+	  
+	  var other = media({
+	  	autoplay: false
+	  }); 
+	  attach(other, '.other');
+
+
+	</script>
+</body>
+</html>
