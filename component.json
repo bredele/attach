@@ -4,7 +4,9 @@
   "description": "Attach media or stream to a video element",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "bredele/stomach": "~0.1.0"
+  },
   "development": {
     "bredele/media": "~0.1.4"
   },

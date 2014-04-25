@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/bredele/attach/issues"
   },
-  "homepage": "https://github.com/bredele/attach"
+  "homepage": "https://github.com/bredele/attach",
+  "dependencies": {
+    "stomach": "^0.1.0"
+  }
 }

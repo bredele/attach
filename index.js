@@ -1,30 +1,17 @@
 
 /**
+ * Module dependencies.
+ * @api private
+ */
+
+var dom = require('stomach');
+
+
+/**
  * Expose 'attach'
  */
 
 module.exports = attach;
-
-
-/**
- * Render html from string or return
- * query selector.
- * 
- * @param  {String | Element} tmpl 
- * @return {Element}
- */
-
-function domify(tmpl) {
-  if(typeof tmpl === 'string') {
-     if(tmpl[0] === '<') {
-       var div = document.createElement('div');
-       div.insertAdjacentHTML('beforeend', tmpl);
-       return div.firstChild;
-     } 
-     return document.querySelector(tmpl);
-   }
-   return tmpl;
-}
 
 
 /**
@@ -45,7 +32,7 @@ function domify(tmpl) {
  */
 
 function attach(media, el, options) {
-  var node = domify(el);
+  var node = dom(el);
   var video;
   if(typeof media === 'function') {
    if(!media.set) {
