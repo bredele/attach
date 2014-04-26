@@ -2,7 +2,7 @@
   "name": "attach",
   "repo": "bredele/attach",
   "description": "Attach media or stream to a video element",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [],
   "dependencies": {
     "bredele/stomach": "~0.1.0"

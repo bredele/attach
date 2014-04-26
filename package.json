@@ -1,6 +1,6 @@
 {
   "name": "attach",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Attach media or stream to a video element",
   "main": "index.js",
   "directories": {
