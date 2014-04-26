@@ -8,7 +8,7 @@
     "bredele/stomach": "~0.1.0"
   },
   "development": {
-    "bredele/media": "~0.1.4"
+    "bredele/media": "~0.1.5"
   },
   "license": "MIT",
   "main": "index.js",

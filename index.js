@@ -33,20 +33,19 @@ module.exports = attach;
 
 function attach(media, el, options) {
   var node = dom(el);
+  var success = function(stream, url) {
+    node.src = url;
+  };
   var video;
   if(typeof media === 'function') {
-   if(!media.set) {
-    video = media(options, function(stream, url) {
-      node.src = url;
-    });
-   } else {
+    video = media(options, success);
+  } else {
     video = media;
     video.set(options);
-    video(function(stream, url) {
-      node.src = url;
-    });
-   }
-   node.autoplay = video.get('autoplay');
+    video.capture(success);
   }
+  node.autoplay = video.get('autoplay');
+  //NOTE: it should work with stream too instead media
   return video;
 }
+
